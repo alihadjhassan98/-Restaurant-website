@@ -1,0 +1,254 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+p { 
+	font-weight: 300;
+	color: :#111;
+ }
+
+body{
+	min-height: 10px;
+}
+
+
+.banner .content .submit{
+      width: 30%;
+      background: none;
+      padding: 4px;
+      outline: none;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 35px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-left: 0%;
+      border:1px solid olive;
+      color: olive;
+     }
+
+     .submit:hover{
+      border: 1px olive;
+      color: olive;
+      cursor: pointer;
+     }
+
+header {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+
+header.sticky 
+{
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo {
+	color:white;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+header .logo2 {
+	color:black;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+
+header.sticky .logo 
+{
+    color: #111;
+}
+
+
+header .logo span {
+	color: olive;
+
+}
+
+header .navigation {
+	position: relative;
+	display: flex;
+}
+
+
+
+header .logo2 span {
+	color: olive;
+
+}
+
+header.sticky .logo2 
+{
+    color: black;
+}
+
+header .navigation2 {
+	position: relative;
+	display: flex;
+}
+
+header .navigation2 li {
+	margin-left: 30px;
+	list-style: none;
+}
+
+
+header .navigation2 li a {
+	color: black;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+
+header .navigation2 li a:hover {
+	color:olive;
+}
+
+header.sticky .navigation2 li a 
+{
+	color: black;
+}
+
+
+section
+{
+	padding: 120px;
+}
+
+
+
+
+.title
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.titleText
+{
+	color: #111;
+	font-size: 1.8em;
+	font-weight: 700;
+	text-align: center;
+    animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:100%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+
+.menu .title .titleText h2 {
+    
+     margin-bottom: 10%;
+}
+
+.menu .title .titleText span {
+   
+    color:olive;
+}
+
+
+.menu .content
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.menu .content .box
+{
+	width: 325px;
+	margin: 20px;
+	border: 15px solid #fff;
+	box-shadow: 0 5px 35px rgba(0,0,0,0.20)
+}
+.menu  .content .box .imgBx
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+.menu  .content .box .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    transition: all .5s;
+}
+.imgBx:hover img,
+.imgBx:focus img {
+  transform: scale(1.3);
+}
+
+
+.menu  .content .box .text
+{
+	padding: 15px 0 5px;
+}
+.menu  .content .box .text h3
+{
+	font-weight: 700;
+	color: #111;
+	text-align: center;
+}
+
+
+ .submit{
+      width: 10%;
+      background: none;
+      padding: 4px;
+      outline: none;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 35px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-left: 0%;
+      border:1px solid olive;
+      color: olive;
+     }
+
+     .submit:hover{
+      border: 1px olive;
+      color: olive;
+      cursor: pointer;
+     }

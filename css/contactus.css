@@ -1,0 +1,395 @@
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+p { 
+	font-weight: 300;
+	color: white;
+ }
+
+body{
+	min-height: 10px;
+}
+
+header {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+
+header.sticky 
+{
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo {
+	color:#fff;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+header .logo2 {
+	color:white;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+
+header.sticky .logo 
+{
+    color: black;
+}
+
+
+header .logo span {
+	color: olive;
+
+}
+
+header .navigation {
+	position: relative;
+	display: flex;
+}
+
+header .navigation li {
+	margin-left: 30px;
+	list-style: none;
+}
+
+header .navigation li a {
+	color: white;
+	font-weight: 300;
+	text-decoration: none;
+}
+header.sticky .navigation li a 
+{
+	color: #111;
+}
+header .navigation li a:hover {
+	color: olive;
+}
+
+
+section
+{
+	padding: 120px;
+}
+
+
+.titletext
+{
+	color: white;
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+
+.title
+{
+	width: 100%;
+	display: flex;
+	justify-content: right;
+	align-items: right;
+	flex-direction: column;
+}
+
+
+.contact{
+	background: url(../photo/p2.jpg);
+ 	background-size: cover;
+}
+
+
+.contactForm
+{
+	
+	padding: 75px 50px;
+	  box-shadow: -15px -15px 15px rgba(255,255,255,0.2),15px 15px 15px rgba(0,0,0,0.5),
+    inset -15px -15px 15px rgba(255,255,255,0.2),inset -15px -15px 15px rgba(0,0,0,0.5);
+	max-width: 500px;
+	margin-top: 10px;
+	margin-right:-450px;
+
+}
+
+
+.contactForm h1
+{
+	color: white;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+.line{
+  border-bottom: 3px solid black;
+  width: 20%;
+  margin-left: 0;
+}
+.contactForm .inputBox
+{
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+	width: 100%;
+	border: 1px solid #555;
+	padding: 10px;
+	color: #111
+	;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+	
+}
+
+.contactForm  .input
+{
+	font-size: 1em;
+	color: #fff;
+	background: olive;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	max-width: 100px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+}
+.contactForm2 i.fa{
+      font-size: 20px; 
+      padding: 2%;
+      background-color: none;
+      border-radius: 80%;
+      margin: 2%;
+      cursor: pointer;
+      border:2px solid olive;
+      color: olive;
+    }
+    
+    .contactForm2 i.fa:hover{
+      cursor: pointer;
+      border:2px solid white;
+      color: white;
+    }
+     
+     .contactForm2{
+     	float: left;
+        display: grid;
+        grid-template-columns: auto auto;
+        	margin-top: 50px;
+         }
+
+      
+     
+     .contactForm1{
+     	
+        display: grid;
+        grid-template-columns: auto auto;
+        	margin-top: 30px;
+         }
+
+  .form-info{
+        font-size: 16px;
+        font-style: italic;
+        color: white;
+        letter-spacing: 2px;
+      }
+
+      .lien .fa {
+  padding: 8px;
+  font-size: 20px;
+  width: 50px;
+  text-decoration: none;
+  color: white;
+  margin-top: 30px;
+  float:right;
+}
+.lien .fa:hover{
+  color: rgb(16, 135, 190);;
+}
+
+
+input{
+      
+      background-color:rgba(136, 133, 133, 0);
+      outline:none;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+  border-bottom: 3px solid white;
+border-top: none;
+border-right: none;
+border-left: none;
+     }
+     input::placeholder{
+       color: none;
+      
+     }
+
+
+      textarea{
+       background-color:rgba(136, 133, 133, 0);
+      outline:none;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+  border-bottom: 3px solid white;
+border-top: none;
+border-right: none;
+border-left: none;
+     }
+     textarea::placeholder{
+       color: none;
+    
+
+     }
+
+
+      .submit{
+      width: 30%;
+      background: none;
+      padding: 4px;
+      outline: none;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 35px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-left: 0%;
+      border:1px solid white;
+      color: white;
+     }
+
+     .submit:hover{
+      border: 1px solid white;
+      color: white;
+      cursor: pointer;
+     }
+.group { 
+  position: relative; 
+  margin-bottom: 50px; 
+}
+
+input {
+  font-size: 13px;
+  height: 25px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  color: #B1B1B1;
+  background: rgba(0,0,0,0);
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  opacity: 1;
+}
+
+label {
+  color: #B1B1B1; 
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 2px;
+  opacity: 0.5;
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top: -10px;
+  font-size: 12px;
+  color: #B1B1B1;
+  opacity: 1;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%; 
+  width: 100px; 
+  top: 25%; 
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to 	{ width:0; background:transparent; }
+}
+
+      .contact-form i.fa{
+      font-size: 12px; 
+      padding: 3%;
+      background-color: none;
+      border-radius: 80%;
+      margin: 2%;
+      cursor: pointer;
+      border:2px solid rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
+    }
+    
+    .contact-form i.fa:hover{
+      cursor: pointer;
+      border:2px solid white;
+      color: white;
+    }
+     
+       .contact-form{
+        display: block;
+        width: 50%;
+        margin-left: 570px;
+        margin-top: 150px;
+      }}

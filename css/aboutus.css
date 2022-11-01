@@ -1,0 +1,153 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+p { 
+	font-weight: 300;
+	color: :#111;
+ }
+
+body{
+	min-height: 10px;
+}
+
+
+
+header {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+
+header.sticky 
+{
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo {
+	color:#fff;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+
+header.sticky .logo 
+{
+    color: #111;
+}
+
+
+header .logo span {
+	color: green;
+
+}
+
+header .navigation {
+	position: relative;
+	display: flex;
+}
+
+header .navigation li {
+	margin-left: 30px;
+	list-style: none;
+}
+
+header .navigation li a {
+	color: white;
+	font-weight: 300;
+	text-decoration: none;
+}
+header.sticky .navigation li a 
+{
+	color: #111;
+}
+header .navigation li a:hover {
+	color: green;
+}
+
+.about{
+    background: url(../photo/tomate.jpg);
+    background-size: cover;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-section{
+    width: 55%;
+    float: right;
+    padding: 100px;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),15px 15px 15px rgba(0,0,0,0.5),
+    inset -15px -15px 15px rgba(255,255,255,0.2),inset -15px -15px 15px rgba(0,0,0,0.5);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+  
+}
+.text{
+    font-size: 15px;
+    color: black;
+    line-height: 30px;
+    text-align:justify;
+    margin-bottom: 40px;
+    animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:100%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+
+
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #00999c;
+
+}
+.about .inner-section span {
+	color: green;
+
+}
+
+
+
+}
